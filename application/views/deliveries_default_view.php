@@ -21,7 +21,7 @@
 <div id="fancybox-content" style="border-width: 10px; width: 100%; margin-left:300px; height: auto;">
       <div style="width:auto;height:auto;overflow: auto;position:relative;">
         <div id="mapdata">
-          <img src="counties.gif" usemap="#NewMap">
+          <img src="<?= base_url();?>counties.gif" usemap="#NewMap">
           <map class = "mandera" name="NewMap" id="NewMap"> 
             <area shape="poly" coords="450,180,469,188,488,209,504,216,505,228,513,249,522,259,531,262,537,269,542,269,542,220,568,194,612,133,557,135,526,109,457,139,450,154" alt="34" href="#">
              <area shape="poly" coords="161,91,221,92,243,103,313,149,324,159,365,158,393,166,411,169,415,199,405,207,396,213,392,231,387,238,381,239,385,254,385,267,386,274,342,299,338,313,338,313,309,338,310,327,300,323,279,328,262,302,250,284,234,282,229,279,226,261,217,241,213,241,213,217,209,210,201,212,191,204,182,189,178,177,173,175,161,175" alt="35" href="#">
@@ -85,6 +85,15 @@
               <!--BODY-->
 
            <?php if(isset($message)){?>
+
+           <script type="text/javascript">
+            $(document).ready(function () {
+                $('#CommodityRegistration').click(function() {
+                    window.location.reload();
+                });
+            });
+        </script>
+           
            <div class="row">
            <div class="col-lg-12"><div class="alert alert-success"><?=$message?></div></div>
            </div>

@@ -248,7 +248,6 @@
                 <label for="contact-name" class="col-lg-4 control-label">Funding Agency: </label>
                 <div class= "col-lg-8">
                <select type="text" class="form-control" name="funding_agency_name" placeholder="select one">
-                  <option value="Select One" selected> Select One</option>
                   <option value="PMI">PMI</option>
                   <option value="Global Fund">Global Fund</option>
                   <option value="UNITAID">UNITAID</option>

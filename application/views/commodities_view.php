@@ -93,6 +93,7 @@ $(function(){
 <label id="hide">Id :</label>
 <input type="text" id="hide" name="commodity_id" value="<?php echo $commodity->commodity_id; ?>">
 <label>Commodity Name :</label>
+
 <input type="text" name="commodity_name" value="<?php echo $commodity->commodity_name; ?>">
 <label>Pack Size :</label>
 <input type="text" name="pack_size" value="<?php echo $commodity->pack_size; ?>">
